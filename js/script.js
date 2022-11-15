@@ -31,5 +31,12 @@ new Vue({
         deleteWord(index) {
             this.arrTodos.splice(index, 1);
         },
+        isTrue(prova) {
+            if(prova.done) {
+                prova.done = false;
+            }else {
+                prova.done = true;
+            }
+        }
     }
 }); 
