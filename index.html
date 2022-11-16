@@ -13,13 +13,13 @@
 <body>
     <div id="app">
         <div class="container">
-            <form @submit.prevent="addWord()">
+            <form @submit.prevent="addWord()" >
                 <input type="text" placeholder="Inserisci qualcosa da fare" v-model="newWord">
-                <button class="mod-btn">ADD</button>
+                <button class="mod-btn"><i class="fa-solid fa-plus"></i></button>
             </form>
         </div>
         <div class="words-container">
-            <h2 v-if="arrTodos.length == 0">Non c'e' niente da fare</h2>
+            <h2 class="no-word" v-if="arrTodos.length == 0">Non c'e' niente da fare</h2>
             <ul v-else>
                 <li 
                 v-for="(todo, i) in arrTodos" 
@@ -29,7 +29,7 @@
                 @click="isTrue(todo)"
                 >
                     {{ todo.text }}
-                    <div><i class="fa-solid fa-xmark" @click="deleteWord(i)"></i></div>
+                    <div><i class="fa-solid fa-xmark delete" @click="deleteWord(i)"></i></div>
                 </li>
             </ul>
         </div>

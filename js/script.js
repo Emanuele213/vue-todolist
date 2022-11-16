@@ -19,11 +19,12 @@ new Vue({
     },
     methods:{
         addWord() {
-            if(this.newWord === 0) return;
-            this.arrTodos.push({
-                text: this.newWord,
-                done: this.newWord, 
-            })
+            if(this.newWord.trim()) {
+                this.arrTodos.push({
+                    text: this.newWord,
+                    done: this.newWord, 
+                })
+            }
             console.log(this.newWord);
             this.newWord = '';
             

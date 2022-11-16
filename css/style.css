@@ -19,6 +19,10 @@ li{
     cursor: pointer;
 }
 
+#app {
+    background-color: lightgray;
+}
+
 .container {
     max-width: 1200px;
     margin: 2rem auto;
@@ -28,13 +32,44 @@ li{
     height: 100%;
 }
 
+form {
+    margin-top: 1rem;
+}
+
+form input {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: 0;
+    background-color: darkgray;
+    border-radius: 1rem;
+}
+
+.mod-btn {
+    color: white;
+    background-color: darkgray;
+    font-size: 1rem;
+    border: 0;
+    text-align: center;
+    border-radius: 100%;
+    padding: 0.5rem;
+}
+
 .words-container {
     display: flex;
     justify-content: center;
     max-width: 700px;
     max-height: 700px;
     margin: 0 auto;
-    background-color: aquamarine;
+    padding: 1rem;
+}
+
+.no-word {
+    font-size: 2rem;
+    border-bottom: 2px solid black;
+    margin-bottom: 1rem;
+    background-color: antiquewhite;
+    border-radius: 2rem;
+    padding: 1rem 2.5rem;
 }
 
 .list-words {
@@ -44,13 +79,16 @@ li{
     font-size: 2rem;
     border-bottom: 2px solid black;
     margin-bottom: 1rem;
+    background-color: antiquewhite;
+    border-radius: 2rem;
+    padding: 1rem 2.5rem;
 }
 
 .crossText {
     text-decoration: line-through yellow;  
 }
 
-.fa-solid {
+.delete {
     margin-left: 5rem;
     text-decoration: none;
 }
@@ -59,7 +97,7 @@ li{
     margin-right: 1rem;
 }
 
-.fa-solid:hover {
+.delete:hover {
     cursor: pointer;
     color: red;
 }
