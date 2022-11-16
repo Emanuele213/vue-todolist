@@ -52,6 +52,7 @@ li{
 
 .fa-solid {
     margin-left: 5rem;
+    text-decoration: none;
 }
 
 .list-words input {
@@ -61,8 +62,4 @@ li{
 .fa-solid:hover {
     cursor: pointer;
     color: red;
-}
-
-.text {
-    text-decoration: none;
 }
