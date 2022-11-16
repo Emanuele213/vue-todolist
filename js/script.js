@@ -25,9 +25,7 @@ new Vue({
                     done: this.newWord, 
                 })
             }
-            console.log(this.newWord);
             this.newWord = '';
-            
         },
         deleteWord(index) {
             this.arrTodos.splice(index, 1);
